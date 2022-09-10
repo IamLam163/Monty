@@ -29,6 +29,8 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 }instruction_t;
-
+void addnode(stack_t **head, int n);
+void free_stack(stack_t *head);
+void print_stack(stack_t **head, unsigned int counter);
 
 #endif
